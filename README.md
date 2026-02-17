@@ -11,18 +11,7 @@ Whenever code is pushed to GitHub, Jenkins automatically builds and deploys the 
 
 ---
 
-## 📌 Project Architecture
 
-cicd-node-app/
-│
-├── Dockerfile
-├── package.json
-├── package-lock.json
-├── server.js
-└── README.md
-
-
----
 
 ## 🛠 Technologies Used
 
@@ -50,3 +39,22 @@ Jenkins automatically starts the build process.
 
 ```bash
 docker build -t cicd-node-app .
+```
+### 5️⃣ Stop & Remove Old Container
+```bash
+docker stop node-app || true
+docker rm node-app || true
+
+```
+
+### 6️⃣ Run New Container
+```bash
+docker run -d -p 8000:8000 --name node-app cicd-node-app
+
+```
+
+### 7️⃣ Application Live
+```bash
+http://<EC2-PUBLIC-IP>:8000
+
+```
