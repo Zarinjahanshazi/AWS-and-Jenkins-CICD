@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
   res.send(`
     <html>
       <head>
-        <title>Simple Todo</title>
+        <title>Awesome Simple Todo</title>
       </head>
       <body>
         <h2>My Todo List</h2>
