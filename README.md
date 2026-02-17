@@ -8,7 +8,7 @@ This project demonstrates a fully automated CI/CD pipeline using:
 - AWS EC2
 
 Whenever code is pushed to GitHub, Jenkins automatically builds and deploys the application using Docker.
-
+URL:http://52.66.209.27:8000/
 ---
 
 
